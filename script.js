@@ -122,7 +122,6 @@ const tableBody = document.getElementById("data-table");
     });
 
 
-// Function to display modal with request details
 function showRequestDetails(index) {
     const modal = document.getElementById("requestModal");
     const request = requestData[index];
@@ -159,3 +158,27 @@ const viewButtons = document.querySelectorAll(".btn-view");
 viewButtons.forEach((button, index) => {
     button.addEventListener("click", () => showRequestDetails(index));
 });
+
+
+function submitForm() {
+    alert("Thông tin đã được cập nhật!");
+    // Logic gửi thông tin lên server
+}
+
+function openModal() {
+    document.getElementById("error-modal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("error-modal").style.display = "none";
+}
+
+function submitError() {
+    const errorNote = document.getElementById("error-note").value;
+    if (errorNote.trim() === "") {
+        alert("Vui lòng điền ghi chú.");
+        return;
+    }
+    alert("Báo cáo đã được gửi!");
+    closeModal();
+}
