@@ -212,3 +212,5 @@ function openModal(cccd, name, reason) {
 function closeModal() {
     document.getElementById("requestModal").style.display = "none";
 }
+
+
