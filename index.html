@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý giấy khai sinh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <h1>UBND</h1>
+            </div>
+            <div class="nav">
+                <button class="btn active">Quản lý giấy khai sinh</button>
+                <button class="btn">Quản lý giấy tạm vắng</button>
+                <button class="btn">Quản lý tạm trú</button>
+            </div>
+            <div class="user-info">
+                <span>Cán bộ quản lý</span>
+                <div class="avatar">
+                    <img src="avatar.png" alt="avatar">
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="content">
+                <h2>Cấp giấy khai sinh</h2>
+                <div class="filter">
+                    <select>
+                        <option value="default">Cấp giấy khai sinh</option>
+                    </select>
+                    <input type="text" placeholder="Tìm kiếm danh sách đơn đăng kí...">
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>CCCD</th>
+                            <th>Thời gian đăng kí</th>
+                            <th>Lý do</th>
+                            <th>Hành động</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>12345678901</td>
+                                <td>09:30 01/08/2024</td>
+                                <td>Mất giấy tờ tùy thân</td>
+                                <td>
+                                    <button class="btn-view">Xem yêu cầu</button>
+                                    <button class="btn-approve">Duyệt</button>
+                                    <button class="btn-reject">Hủy</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>98765432100</td>
+                                <td>14:15 05/09/2024</td>
+                                <td>Thay đổi địa chỉ</td>
+                                <td>
+                                    <button class="btn-view">Xem yêu cầu</button>
+                                    <button class="btn-approve">Duyệt</button>
+                                    <button class="btn-reject">Hủy</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>76543210987</td>
+                                <td>11:45 12/07/2024</td>
+                                <td>Giấy khai sinh bị mờ</td>
+                                <td>
+                                    <button class="btn-view">Xem yêu cầu</button>
+                                    <button class="btn-approve">Duyệt</button>
+                                    <button class="btn-reject">Hủy</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>45678901234</td>
+                                <td>08:00 03/06/2024</td>
+                                <td>Sai thông tin cá nhân</td>
+                                <td>
+                                    <button class="btn-view">Xem yêu cầu</button>
+                                    <button class="btn-approve">Duyệt</button>
+                                    <button class="btn-reject">Hủy</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>19283746500</td>
+                                <td>10:30 22/05/2024</td>
+                                <td>Mất giấy khai sinh</td>
+                                <td>
+                                    <button class="btn-view">Xem yêu cầu</button>
+                                    <button class="btn-approve">Duyệt</button>
+                                    <button class="btn-reject">Hủy</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>10293847560</td>
+                                <td>16:45 09/08/2024</td>
+                                <td>Giấy khai sinh bị cháy</td>
+                                <td>
+                                    <button class="btn-view">Xem yêu cầu</button>
+                                    <button class="btn-approve">Duyệt</button>
+                                    <button class="btn-reject">Hủy</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>18273645098</td>
+                                <td>12:15 17/09/2024</td>
+                                <td>Yêu cầu cấp lại CCCD</td>
+                                <td>
+                                    <button class="btn-view">Xem yêu cầu</button>
+                                    <button class="btn-approve">Duyệt</button>
+                                    <button class="btn-reject">Hủy</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>98712365409</td>
+                                <td>09:00 26/06/2024</td>
+                                <td>Giấy khai sinh bị hỏng</td>
+                                <td>
+                                    <button class="btn-view">Xem yêu cầu</button>
+                                    <button class="btn-approve">Duyệt</button>
+                                    <button class="btn-reject">Hủy</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>56789123456</td>
+                                <td>14:45 15/07/2024</td>
+                                <td>Thông tin sai lệch</td>
+                                <td>
+                                    <button class="btn-view">Xem yêu cầu</button>
+                                    <button class="btn-approve">Duyệt</button>
+                                    <button class="btn-reject">Hủy</button>
+                                </td>
+                            </tr>
+                        
+                        <!-- Thêm các hàng khác tại đây -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="modal" id="view-request">
+            <div class="modal-content">
+                <h3>Xem yêu cầu</h3>
+                <p><strong>CCCD:</strong> 01235683278</p>
+                <p><strong>Họ và tên:</strong> Nguyễn Minh Hiên</p>
+                <p><strong>Lý do:</strong> Giấy khai sinh bị rách</p>
+                <p><strong>Ghi chú:</strong> Không có</p>
+                <button class="btn-close">Đóng</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
