@@ -1,4 +1,3 @@
-// Sample data (you can replace this with real data from your backend)
 const requestData = [
     {
         cccd: "01234567890",
@@ -121,6 +120,24 @@ const tableBody = document.getElementById("data-table");
         tableBody.appendChild(row);
     });
 
+const tableBody2 = document.getElementById("data-table1");
+    requestData.forEach((request, index) => {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+            <td>${index + 1}</td>
+            <td>${request.cccd}</td>
+            <td>
+                ${request.dob}
+            </td>
+            <td>${request.note}</td>
+                <td>
+                <button class="btn-view" data-index="0">Xem yêu cầu</button>
+                <button class="btn-approve">Duyệt</button>
+                <button class="btn-reject">Hủy</button>
+            </td>
+        `;
+        tableBody.appendChild(row);
+});
 
 function showRequestDetails(index) {
     const modal = document.getElementById("requestModal");
@@ -138,14 +155,14 @@ function showRequestDetails(index) {
     modal.style.display = "block";
 }
 
-// Close the modal when the user clicks the 'x' button
+
 const closeBtn = document.getElementsByClassName("close")[0];
 closeBtn.onclick = function() {
     const modal = document.getElementById("requestModal");
     modal.style.display = "none";
 }
 
-// Close the modal when the user clicks outside of it
+
 window.onclick = function(event) {
     const modal = document.getElementById("requestModal");
     if (event.target == modal) {
@@ -153,7 +170,7 @@ window.onclick = function(event) {
     }
 }
 
-// Add event listeners to all "Xem yêu cầu" buttons
+
 const viewButtons = document.querySelectorAll(".btn-view");
 viewButtons.forEach((button, index) => {
     button.addEventListener("click", () => showRequestDetails(index));
@@ -162,7 +179,6 @@ viewButtons.forEach((button, index) => {
 
 function submitForm() {
     alert("Thông tin đã được cập nhật!");
-    // Logic gửi thông tin lên server
 }
 
 function openModal() {
@@ -181,4 +197,18 @@ function submitError() {
     }
     alert("Báo cáo đã được gửi!");
     closeModal();
+}
+
+
+
+function openModal(cccd, name, reason) {
+    document.getElementById("cccd").textContent = cccd;
+    document.getElementById("name").textContent = name;
+    document.getElementById("reason").textContent = reason;
+    document.getElementById("requestModal").style.display = "flex";
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById("requestModal").style.display = "none";
 }
