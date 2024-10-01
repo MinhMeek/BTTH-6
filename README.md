@@ -4,6 +4,12 @@ Họ tên thành viên:
   - Trần Minh Hiền
   - Trần Công Đạt
   - Phạm Minh Phương
+-------------------------------------------------------------------------------------------------------------------------------------
+Giao diện demo
+![image](https://github.com/user-attachments/assets/479fe85a-2130-4e5f-9d5f-39d9e52da1f6)
+![image](https://github.com/user-attachments/assets/c4d108bc-3d3b-4fb3-9595-fc3a323d3570)
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------
 Mô Tả Hệ Thống Quản Lý Thông Tin Dân Cư Chung Cư
 1. Mô Tả Nghiệp Vụ
